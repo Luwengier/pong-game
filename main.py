@@ -38,5 +38,9 @@ while is_game_on:
     ):
         ball.bounce_x()
 
+    # Detect when right paddle misses
+    if ball.xcor() > 380:
+        ball.reset_position()
+
 
 screen.exitonclick()
